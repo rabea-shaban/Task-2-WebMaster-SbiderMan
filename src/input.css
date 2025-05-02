@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+/* استيراد ثيم Flowbite الافتراضي */
+@import "flowbite/src/themes/default";
+
+/* استيراد ملف plugin الخاص بـ Flowbite */
+@plugin "flowbite/plugin";
+
+/* تحديد مصدر ملفات Flowbite */
+@source "../node_modules/flowbite";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,
+html,
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-image: url(../img/home3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+
+
+/* styles.css */
+/* للمتصفحات التي تدعم Webkit (مثل كروم وسفاري) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020307;
+  /* خلفية الاسكرول */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  /* لون الجزء القابل للسحب */
+  border-radius: 10px;
+}
+
+/* لما المستخدم يوقف عليه بالماوس */
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+  /* أورنج أفتح أو تأثير hover */
+}
